@@ -1,0 +1,6 @@
+print("Bem-vindo a calculadora de gorjetas.")
+total_bill = float(input("Digite aqui o valor total da conta: "))
+total_people = int(input("Digite aqui quantas pessoas vão dividir a conta: "))
+percentage_bill = int(input("Qual o porcentual de gorjeta você quer dar? 10,12 ou 15? "))
+result = (total_bill / total_people) * (1+(percentage_bill/100))
+print(f'Cada pessoa deve pagar: R${round(result,2)}')
